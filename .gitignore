@@ -6,7 +6,7 @@ __pycache__/
 # Ignore environment variables and secrets
 .env
 *.env
-venv/
+ecommerce_venv/
 env/
 *.sqlite3
 *.log
