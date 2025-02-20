@@ -25,3 +25,6 @@ urllib3==2.3.0
 vine==5.1.0
 psycopg2-binary
 python-decouple
+gunicorn
+whitenoise
+dj-database-url

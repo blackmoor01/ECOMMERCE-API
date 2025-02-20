@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.urls import path, include, reverse_lazy
 from django.shortcuts import redirect
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     # Redirect root URL to Swagger UI
@@ -26,3 +27,5 @@ urlpatterns = [
     # API docs (Swagger UI)
     path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='docs'),
 ]
+
+urlpatterns += staticfiles_urlpatterns()
