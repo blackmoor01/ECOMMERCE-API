@@ -7,8 +7,8 @@ This is a **RESTful API** built with **Django & Django REST Framework (DRF)** fo
 - **Backend**: Django, Django REST Framework
 - **Database**: PostgreSQL
 - **Authentication**: JWT (JSON Web Tokens)
-- **Deployment**: [Insert your hosting platform]
-- **API Documentation**: [Insert your documentation link]
+- **Deployment**: Render
+- **API Documentation**: https://ecommerce-api-0r20.onrender.com
 
 ## 📌 Features
 ✅ **User Authentication & Authorization** (JWT-based login & registration)
@@ -22,7 +22,7 @@ This is a **RESTful API** built with **Django & Django REST Framework (DRF)** fo
 ## 🛠 Installation & Setup
 ### **1️⃣ Clone the Repository**
 ```sh
- git clone https://github.com/YOUR_GITHUB_USERNAME/ecommerce-api.git
+ git clone https://github.com/blackmoor01/ECOMMERCE-API.git
  cd ecommerce-api
 ```
 
@@ -53,6 +53,7 @@ REFRESH_TOKEN_LIFETIME=1
 
 ### **5️⃣ Apply Migrations & Start Server**
 ```sh
+python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
 ```
@@ -82,7 +83,11 @@ It will return an `access` and `refresh` token. Use the `access` token for authe
 | `/api/token/`            | POST   | Get access token (Login)       | ❌ No |
 
 ## 🛠 Deployment
+This project is deployed on **Render**, ensuring seamless scalability and availability.
 
+### **Using Render**
+- Automatically deploys the API with **PostgreSQL** as the managed database.
+- Handles environment variables securely.
 
 ## 📜 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
